@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.searchBar {
+  width: 400px;
+  margin-left: 700px;
+  margin-top: 70px;
+}
+.header {
+  margin-top: 40px;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  gap: 10px;
+}
+.products img {
+  width: 500px;
+  height: 400px;
+}
