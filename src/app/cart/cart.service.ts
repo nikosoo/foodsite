@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs';
+import { BehaviorSubject, Subject } from 'rxjs';
+import { Food } from '../shared/models/food';
 
 @Injectable({
   providedIn: 'root',
 })
 export class CartService {
-  subject = new Subject();
+  subject = new BehaviorSubject('');
 
   sendMsg(product: any) {
     console.log(product);
