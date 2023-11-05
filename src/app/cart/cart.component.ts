@@ -14,13 +14,7 @@ export class CartComponent implements OnInit {
 
   ngOnInit(): void {
     this.msg.getMsg().subscribe((product: any) => {
-      this.addProduct(product);
-    });
-  }
-  addProduct(product: any) {
-    this.foods1.push({
-      productName: product.name,
-      productPrice: product.price,
+      this.foods1 = product;
     });
   }
 }

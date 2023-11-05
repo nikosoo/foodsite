@@ -11,10 +11,16 @@ import { CartService } from '../cart/cart.service';
 export class HomeComponent {
   productItem: Food;
   foods: Food[] = [];
+  cartItems: any = [];
 
   constructor(private foodService: FoodService, private msg: CartService) {}
 
   ngOnInit() {
     this.foods = this.foodService.getAll();
+  }
+
+  onFunctionName(event: any) {
+    this.cartItems.push(event);
+    this.msg.sendMsg(this.cartItems);
   }
 }

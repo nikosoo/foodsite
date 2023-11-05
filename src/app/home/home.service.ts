@@ -33,10 +33,10 @@ export class FoodService {
   // ];
 
   products: Food[] = [
-    new Food(1, 'pasta', 7, '../../assets/images/pasta.jpg'),
-    new Food(2, 'burger', 10, '../../assets/images/Cheeseburger.jpg'),
-    new Food(3, 'pizza', 12, '../../assets/images/Pepperoni-Pizza-1.jpg'),
-    new Food(4, 'gyros', 5, '../../assets/images/Chicken-Gyros-1.jpg'),
+    new Food(1, 'Pasta', 7, '../../assets/images/pasta.jpg', 4.2),
+    new Food(2, 'Burger', 10, '../../assets/images/Cheeseburger.jpg', 4.8),
+    new Food(3, 'Pizza', 12, '../../assets/images/Pepperoni-Pizza-1.jpg', 3.9),
+    new Food(4, 'Gyros', 5, '../../assets/images/Chicken-Gyros-1.jpg', 4.1),
   ];
   getAll() {
     return this.products;

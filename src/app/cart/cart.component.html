@@ -1,3 +1,23 @@
-<div *ngFor="let food1 of foods1">
-  <app-cart-items [foods1]="food1"></app-cart-items>
+<div class="table1">
+  <div class="relative overflow-x-auto">
+    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+      <thead
+        class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
+      >
+        <tr class="cart1">
+          <th scope="col" class="px-6 py-3">Product name</th>
+
+          <th scope="col" class="px-6 py-3">Price</th>
+        </tr>
+      </thead>
+      <app-cart-items
+        class="products1"
+        *ngFor="let food1 of foods1"
+        [foods1]="food1"
+      ></app-cart-items>
+    </table>
+  </div>
+</div>
+<div class="footer1">
+  <app-footer></app-footer>
 </div>

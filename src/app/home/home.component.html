@@ -54,6 +54,10 @@
 </form>
 <div class="products">
   <div *ngFor="let food of foods">
-    <app-product-list [productItem]="food"></app-product-list>
+    <app-product-list
+      [productItem]="food"
+      (newItemEvent)="onFunctionName($event)"
+    ></app-product-list>
   </div>
 </div>
+<app-footer></app-footer>
