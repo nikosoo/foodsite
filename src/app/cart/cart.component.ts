@@ -17,4 +17,9 @@ export class CartComponent implements OnInit {
       this.foods1 = product;
     });
   }
+
+  orderButton() {
+    alert('Your order has been placed');
+    location.reload();
+  }
 }

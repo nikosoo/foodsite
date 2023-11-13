@@ -9,6 +9,7 @@ import { CartService } from '../cart/cart.service';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent {
+  searchText: any;
   productItem: Food;
   foods: Food[] = [];
   cartItems: any = [];

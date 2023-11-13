@@ -9,8 +9,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProductListComponent } from './home/product-list/product-list.component';
 import { CartItemsComponent } from './cart/cart-items/cart-items.component';
 import { FooterComponent } from './footer/footer.component';
-
+import { FormsModule } from '@angular/forms';
 import { ContactComponent } from './contact/contact.component';
+import { SearchPipe } from './home/filter.pipe';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -27,11 +28,13 @@ const appRoutes: Routes = [
     CartItemsComponent,
     FooterComponent,
     ContactComponent,
+    SearchPipe,
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
     BrowserAnimationsModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
