@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { CartService } from './cart.service';
-import { Food } from '../shared/models/food';
+import { CartService } from '../services/cart.service';
+import { Food } from '../services/food';
 
 @Component({
   selector: 'app-cart',
@@ -21,5 +21,15 @@ export class CartComponent implements OnInit {
   orderButton() {
     alert('Your order has been placed');
     location.reload();
+  }
+
+  getTotalPrice(): number {
+    return this.foods1.reduce((total: any, item: any) => {
+      if (!isNaN(item.price)) {
+        return total + Number(item.price); // Convert to number explicitly if needed
+      } else {
+        return total; // Skip adding this price to the total
+      }
+    }, 0);
   }
 }

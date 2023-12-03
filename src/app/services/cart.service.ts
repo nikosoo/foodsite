@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Subject } from 'rxjs';
-import { Food } from '../shared/models/food';
 
 @Injectable({
   providedIn: 'root',

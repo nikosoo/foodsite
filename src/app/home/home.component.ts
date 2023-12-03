@@ -1,7 +1,7 @@
-import { Component, Input, OnInit, Output } from '@angular/core';
-import { Food } from '../shared/models/food';
-import { FoodService } from './home.service';
-import { CartService } from '../cart/cart.service';
+import { Component } from '@angular/core';
+import { Food } from '../services/food';
+import { FoodService } from '../services/home.service';
+import { CartService } from '../services/cart.service';
 
 @Component({
   selector: 'app-home',

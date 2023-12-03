@@ -1,7 +1,7 @@
 import { Component, EventEmitter, OnInit } from '@angular/core';
-import { FoodService } from '../home.service';
-import { Food } from 'src/app/shared/models/food';
-import { CartService } from 'src/app/cart/cart.service';
+import { FoodService } from '../../services/home.service';
+import { Food } from 'src/app/services/food';
+import { CartService } from 'src/app/services/cart.service';
 import { Input } from '@angular/core';
 import { Output } from '@angular/core';
 
